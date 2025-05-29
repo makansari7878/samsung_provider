@@ -38,9 +38,11 @@ class _ProviderDemoState extends State<ProviderDemo> {
               }),
               SizedBox(height: 40,),
               ElevatedButton(onPressed: (){
-                countProvider.setCount();
+               countProvider.setCount();
               },
-                  child: Text("Count + "))
+                  child: Text("Count + ")),
+              SizedBox(height: 30,),
+
             ],
           ),
         ),
