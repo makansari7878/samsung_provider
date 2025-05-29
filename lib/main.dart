@@ -28,11 +28,14 @@ import 'package:samsung_proiver_app/screen/counter_display.dart';
 
 
 
-void main() {
-   ProviderScope(
-    child: MyApp(),
-  );
-}
+
+  void main() {
+    runApp(  // <-- Add this missing runApp()
+      ProviderScope(
+        child: MyApp(),
+      ),
+    );
+  }
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
